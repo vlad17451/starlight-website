@@ -13,7 +13,7 @@ const Container = styled.div`
   align-items: center;
 `
 
-const EMTG_ADDRESS = '0x570baDE252a629902D988b50b822D4f821e8b012'
+// const EMTG_ADDRESS = '0x570baDE252a629902D988b50b822D4f821e8b012'
 
 const CHAIN_ID = 10
 

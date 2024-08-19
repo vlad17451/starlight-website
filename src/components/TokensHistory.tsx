@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import React, { useCallback, useMemo } from 'react'
+import { useCallback } from 'react'
 import { TokenTransfer } from '../hooks/useTokenHistory'
 import { ethers } from 'ethers'
 import { shortenAddress } from '../utils'

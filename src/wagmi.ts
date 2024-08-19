@@ -1,6 +1,7 @@
 import { http, createConfig } from 'wagmi'
 import { optimism } from 'wagmi/chains'
-import { coinbaseWallet, injected, walletConnect } from 'wagmi/connectors'
+// import { coinbaseWallet, injected, walletConnect } from 'wagmi/connectors'
+import { injected } from 'wagmi/connectors'
 
 export const config = createConfig({
   chains: [optimism],

@@ -1,0 +1,92 @@
+:root {
+  background-color: #181818;
+  color: #FFFFFF;
+  color-scheme: light dark;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Lato", monospace;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    background-color: #f8f8f8;
+    color: #181818;
+  }
+} */
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+  src: url(https://scryfall.com/assets/lato/light-cbb5fe450f3b789ef36b04bbbe540ee5c550a72c74a63799410ad144edd04ee5.woff2) format("woff2"),
+       url(https://scryfall.com/assets/lato/light-b4a70600cd5e2b44371f268e2c5e74eb5161e5892a3c56cde795f8b1dc08fa37.woff) format("woff");
+  font-display: swap;
+  font-synthesis: style;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://scryfall.com/assets/lato/regular-9b61204a15d14a8c61e8e4f2d85651f966c8b6b42ff7618bc6fc2c0a546412c7.woff2) format("woff2"),
+       url(https://scryfall.com/assets/lato/regular-ed15dac85169be3b0c646b1bffdfe73faf947a641569236ae29d492d906a2b20.woff) format("woff");
+  font-display: swap;
+  font-synthesis: style;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: italic;
+  src: url(https://scryfall.com/assets/lato/italic-147f9eecca2a109cc06a7aa5dc5ef780db58fa439471172d88e6a1d19edf41c4.woff2) format("woff2"),
+       url(https://scryfall.com/assets/lato/italic-a973ad3dd96939a675e79067ebdf67952aeb252189e0108dc90eda42b38f12ff.woff) format("woff");
+  font-display: swap;
+  font-synthesis: style;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: bold;
+  font-style: normal;
+  src: url(https://scryfall.com/assets/lato/semibold-7ce51a5e63659c5c9e2e384db5811d2a51f020847e25d2b4b6eddc8ecb350daa.woff2) format("woff2"),
+       url(https://scryfall.com/assets/lato/semibold-36a6843ada46f3f7e96c81cf89927c59c9eecc87f18f693d93c5211adbdd543a.woff) format("woff");
+  font-display: swap;
+  font-synthesis: style;
+}
+
+@font-face {
+  font-family: "MPlantin";
+  font-weight: normal;
+  font-style: italic;
+  src: url(https://scryfall.com/assets/mplantin/italic-deba0bee9d578b90ba5628be887f6cb65ab3203f3aa0abb6ba03162b0769d8a9.woff2) format("woff2"),
+       url(https://scryfall.com/assets/mplantin/italic-deb05f85a25ee752ddd4a5fa86514f8d2b87237b5b3b2fbf6b661be338599a66.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraMono";
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://scryfall.com/assets/fira-mono/regular-21dc9809252abf51211ea77c29ed0d5065c4ec3118bf39b79efbe216ea6d266f.woff2) format("woff2"),
+       url(https://scryfall.com/assets/fira-mono/regular-2177955238ba61787f2c7f50cdf33727538d2d3ee5074fa8c2d21b5d5b6b2369.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PhyrexianHorizontal";
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://scryfall.com/assets/phyrexian-horizontal/regular-a0bc4436a0773029fa342c6e6c9755649f01589751bf4c192c608bf72b1be772.woff2) format("woff2"),
+       url(https://scryfall.com/assets/phyrexian-horizontal/regular-1618781ec2527dcf98324e567d8e35dd1ba112375349a11cbbde465b0d388353.woff) format("woff");
+  font-display: swap;
+}

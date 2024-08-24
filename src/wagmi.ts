@@ -1,14 +1,18 @@
 import { http, createConfig } from 'wagmi'
-import { optimism } from 'wagmi/chains'
+import { optimism, mainnet } from 'wagmi/chains'
 import { injected, walletConnect } from 'wagmi/connectors'
 
 export const config = createConfig({
-  chains: [optimism],
+  chains: [
+    optimism,
+    mainnet
+  ],
   connectors: [
     injected(),
     walletConnect({ projectId: import.meta.env.VITE_WC_PROJECT_ID }),
   ],
   transports: {
+    [mainnet.id]: http(),
     [optimism.id]: http(),
   },
 })

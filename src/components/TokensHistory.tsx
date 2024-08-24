@@ -4,7 +4,9 @@ import { TokenTransfer } from '../hooks/useTokenHistory'
 import { ethers } from 'ethers'
 import { shortenAddress } from '../utils'
 
-const Container = styled.div``
+const Container = styled.div`
+  width: 100%;
+`
 const Title = styled.h3``
 
 const Items = styled.div`
@@ -17,7 +19,7 @@ const Items = styled.div`
 `
 const Item = styled.div`
   font-size: 14px;
-  width: 400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -42,12 +44,11 @@ const Bottom = styled.div`
 
 const Link = styled.a`
   margin-left: 10px;
-  opacity: .7;
+  opacity: .8;
 `
 
 const Addresses = styled.div`
-  opacity: .5;
-  width: 280px;
+  opacity: .7;
   display: flex;
   justify-content: space-between;
   div:not(:last-child) {
@@ -64,7 +65,7 @@ const Green = styled.span`
 `
 
 const Red = styled.span`
-  color: #94405c;
+  color: #c73252;
 `
 
 
@@ -91,6 +92,7 @@ export default function TokensHistory({ transfers, owner, symbol }: {
     <Container>
       <Title>Token Transfers</Title>
       <Items>
+        { transfers.length === 0 && <Item>No transfers</Item> }
         {transfers.map((transfer) => (
           <Item id={transfer.txHash}>
             <Left>
